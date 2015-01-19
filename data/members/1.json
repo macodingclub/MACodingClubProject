@@ -1,0 +1,8 @@
+{
+  "names":{
+    "firstName": "Plamen",
+    "lastName" : "Hristov"
+  },
+"aboutMe":"Some description here about myself",
+"imagesMember": ["/img/members/plamen.jpg"]
+}

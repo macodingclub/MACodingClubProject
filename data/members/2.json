@@ -1,0 +1,8 @@
+{
+  "names":{
+    "firstName": "fNameMember2",
+    "lastName" : "lNameMember2"
+  },
+"aboutMe":"Some description here about myself",
+"imagesMember": ["/img/members/member.jpg"]
+}
