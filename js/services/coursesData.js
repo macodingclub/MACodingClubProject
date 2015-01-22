@@ -7,10 +7,6 @@ maCodingClub.factory('coursesData', function ($http, $resource) {
 			return resource.get(
 				{id: id}
 			)
-		},
-
-		getAllMembers: function () {
-			return resource.query();
 		}
 	}
 });

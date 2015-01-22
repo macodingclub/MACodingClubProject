@@ -1,6 +1,6 @@
 {
   "courses":
-    {
+    [{
       "courseId": 1,
       "courseName": "JavaScript Basics",
       "courseImage": "/img/courses/javascript-basics.jpg",
@@ -92,5 +92,5 @@
         "Underscore.js",
         "Teamwork Project"
       ]
-    }
+    }]
 }
