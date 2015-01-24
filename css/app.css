@@ -2,3 +2,7 @@
 .jumbotron {
     background-color: #d9edf7;
 }
+.image-container img{
+    width: 50%;
+    height: 50%;
+}

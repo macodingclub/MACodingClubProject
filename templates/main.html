@@ -1,11 +1,12 @@
-<div class="container">
+<div class="container" ng-controller="MainCtrl">
+
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 ">
+                <div class="col-sm-4 ">
                     <img ng-src="img/ma-coding-club-flag.png">
                 </div>
-                <div class="col-md-8 pull-left">
+                <div class="col-sm-8 pull-left">
                     <h1>Massachusetts Coding Club</h1>
 
                     <p>Our mission is to create real masters in programming so they can find great job into software
@@ -15,6 +16,18 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div ng-repeat="row in courses.makeRangeByIndexes(courses, 3)" class="row">
+            <div ng-repeat="course in courses.slice(row, row + 3) | filter : search" class="col-md-4">
+                <h3><a href="#/course/{{ course.id }}">{{ course.name }}</a></h3>
+
+                <div class="image-container">
+                    <a href="#/course/{{ course.id }}"><img ng-src="{{ course.image }}"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
-{{ courses[0].courseName }}
 

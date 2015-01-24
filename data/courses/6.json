@@ -1,0 +1,13 @@
+{
+  "id": 6,
+  "name": "MEAN",
+  "image": "/img/courses/mean.png",
+  "start": "december",
+  "coveredTopics": [
+    "MongoDB and Mongoose",
+    "ExpressJS",
+    "AngularJS",
+    "NodeJS",
+    "Teamwork Project"
+  ]
+}

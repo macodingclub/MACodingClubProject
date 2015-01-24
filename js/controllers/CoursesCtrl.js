@@ -1,7 +1,7 @@
 'use strict';
 
-maCodingClub.controller('ListAllCourseCtrl',
-	function ListAllCourseCtrl($scope, $routeParams, coursesData) {
+maCodingClub.controller('CourseCtrl',
+	function CourseCtrl($scope, $routeParams, coursesData) {
 		$scope.$routeParams = $routeParams;
 		if ($routeParams.id) {
 			coursesData.getCoursesData($routeParams.id)
@@ -10,8 +10,10 @@ maCodingClub.controller('ListAllCourseCtrl',
 		};
 
 		function getCourses(data) {
-
 			$scope.courses = data;
+		}
+		function sliceArr(arr){
+
 		}
 	});
 

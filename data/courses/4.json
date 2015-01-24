@@ -1,0 +1,14 @@
+{
+  "id": 4,
+  "name": "JavaScript OOP",
+  "image": "/img/courses/javascript-oop.jpg",
+  "start": "september",
+  "coveredTopics": [
+    "Functions and Function Expressions",
+    "JavaScript Object-Oriented Programming and Inheritance",
+    "JS Design Patterns",
+    "RequireJS",
+    "Exception Handling in JS",
+    "JavaScript Best Practices"
+  ]
+}

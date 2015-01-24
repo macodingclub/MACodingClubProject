@@ -1,0 +1,26 @@
+{
+  "id": 3,
+  "name": "PHP & MySQL",
+  "image": "/img/courses/php-mysql.jpg",
+  "start": "may",
+  "coveredTopics": [
+    "XAMPP and LAMP Introduction",
+    "PHP Introduction",
+    "PHP Flow Control",
+    "Arrays",
+    "Strings",
+    "Working with User Input",
+    "Object-Oriented Programming in PHP",
+    "MySQL and phpMyAdmin",
+    "Using MySQL from PHP",
+    "PHP Web Technologies",
+    "Working with Forms",
+    "PHP Exception Handling",
+    "Composer Packages",
+    "Working with Files and Processes in PHP",
+    "PHP Best Practices",
+    "Useful PHP Classes and Collections",
+    "Sessions and Cookies",
+    "Practical Project"
+  ]
+}

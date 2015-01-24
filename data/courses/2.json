@@ -1,0 +1,20 @@
+{
+  "id": 2,
+  "name": "CSS3, HTML5 and Responsive Design",
+  "image": "/img/courses/html5-css3-rwd.jpg",
+  "start": "february",
+  "coveredTopics": [
+    "Web Concepts and Tools",
+    "HTML Overview",
+    "CSS Basics",
+    "CSS Typography",
+    "CSS Positioning and Layout",
+    "HTML Forms",
+    "Advanced Layouts",
+    "HTML & CSS Project Structure, GitHub",
+    "Responsive design",
+    "Practical project assignment",
+    "Photoshop",
+    "WordPress"
+  ]
+}

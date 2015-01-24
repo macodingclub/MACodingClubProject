@@ -1,13 +1,17 @@
 'use strict';
 
- maCodingClub.controller('MainCtrl', function MainCtrl($scope, $routeParams, coursesData){
+ maCodingClub.controller('MainCtrl', function MainCtrl($scope, coursesData){
 
-	coursesData.getCoursesData(1)
-		.$promise
-		.then(getCourse);
+	 $scope.courses = coursesData.getCoursesData();
 
-	function getCourse(data){
-		$scope.courses = data.courses
+	 $scope.courses.makeRangeByIndexes = makeRangeByIndexes;
 
-	}
+	 function makeRangeByIndexes(arr, range){
+	 		 var i = 0;
+	 		 var arrWithIndexes = [];
+	 		 for(i = 0; i < arr.length; i = i + range){
+	 			 arrWithIndexes.push(i)
+	 		 }
+		 return arrWithIndexes;
+	 	 };
  });

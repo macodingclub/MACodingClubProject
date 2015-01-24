@@ -1,0 +1,19 @@
+{
+  "id": 5,
+  "name": "JavaScript Aplications",
+  "image": "/img/courses/javascript-applications.jpg",
+  "start": "september",
+  "coveredTopics": [
+    "jQuery",
+    "jQuery Plugins",
+    "BaaS and Parse.com",
+    "Using HTTP, AJAX and REST",
+    "Cookies and Web Storages",
+    "Consuming REST Services",
+    "Promises and Async Programming",
+    "SPA Applications and Applications Architectures",
+    "Unit Testing with Mocha & Chai",
+    "Underscore.js",
+    "Teamwork Project"
+  ]
+}

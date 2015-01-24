@@ -1,96 +1,14 @@
 {
-  "courses":
-    [{
-      "courseId": 1,
-      "courseName": "JavaScript Basics",
-      "courseImage": "/img/courses/javascript-basics.jpg",
-      "startingCourse": "november",
-      "coveredCourseTopics": [
-        "Development Tools",
-        "JavaScript Syntax",
-        "JavaScript Loops, Arrays, Strings",
-        "JavaScript Functions and Objects",
-        "DOM and Events",
-        "Team Project"
-      ]
-    },
-    {
-      "courseId": 2,
-      "courseName": "CSS3, HTML5 and Responsive Design",
-      "courseImage": "/img/courses/html5-css3-rwd.jpg",
-      "startingCourse": "february",
-      "coveredCourseTopics": [
-        "Web Concepts and Tools",
-        "HTML Overview",
-        "CSS Basics",
-        "CSS Typography",
-        "CSS Positioning and Layout",
-        "HTML Forms",
-        "Advanced Layouts",
-        "HTML & CSS Project Structure, GitHub",
-        "Responsive design",
-        "Practical project assignment",
-        "Photoshop",
-        "WordPress"
-      ]
-    },
-    {
-      "courseId": 3,
-      "courseName": "PHP & MySQL",
-      "courseImage": "/img/courses/php-mysql.jpg",
-      "startingCourse": "may",
-      "coveredCourseTopics": [
-        "XAMPP and LAMP Introduction",
-        "PHP Introduction",
-        "PHP Flow Control",
-        "Arrays",
-        "Strings",
-        "Working with User Input",
-        "Object-Oriented Programming in PHP",
-        "MySQL and phpMyAdmin",
-        "Using MySQL from PHP",
-        "PHP Web Technologies",
-        "Working with Forms",
-        "PHP Exception Handling",
-        "Composer Packages",
-        "Working with Files and Processes in PHP",
-        "PHP Best Practices",
-        "Useful PHP Classes and Collections",
-        "Sessions and Cookies",
-        "Practical Project"
-      ]
-    },
-    {
-      "courseId": 4,
-      "courseName": "JavaScript OOP",
-      "courseImage": "/img/courses/javascript-oop.jpg",
-      "startingCourse": "september",
-      "coveredCourseTopics": [
-        "Functions and Function Expressions",
-        "JavaScript Object-Oriented Programming and Inheritance",
-        "JS Design Patterns",
-        "RequireJS",
-        "Exception Handling in JS",
-        "JavaScript Best Practices"
-      ]
-    },
-    {
-      "courseId": 5,
-      "courseName": "JavaScript Aplications",
-      "courseImage": "/img/courses/javascript-applications.jpg",
-      "startingCourse": "september",
-      "coveredCourseTopics": [
-        "jQuery",
-        "jQuery Plugins",
-        "BaaS and Parse.com",
-        "Using HTTP, AJAX and REST",
-        "Cookies and Web Storages",
-        "Consuming REST Services",
-        "Promises and Async Programming",
-        "SPA Applications and Applications Architectures",
-        "Unit Testing with Mocha & Chai",
-        "Underscore.js",
-        "Teamwork Project"
-      ]
-    }]
+  "id": 1,
+  "name": "JavaScript Basics",
+  "image": "/img/courses/javascript-basics.jpg",
+  "start": "november",
+  "coveredTopics": [
+    "Development Tools",
+    "JavaScript Syntax",
+    "JavaScript Loops, Arrays, Strings",
+    "JavaScript Functions and Objects",
+    "DOM and Events",
+    "Team Project"
+  ]
 }

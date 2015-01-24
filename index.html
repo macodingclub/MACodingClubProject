@@ -4,12 +4,15 @@
 
     <title>Massachusetts Coding Club</title>
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" href="css/app.css"/>
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/bootstrap-theme.css">
+      <link rel="stylesheet" href="css/angular-carousel.css">
+      <link rel="stylesheet" href="css/app.css"/>
+      <link href="css/angular-carousel.css" rel="stylesheet" type="text/css" />
+
 
   </head>
-  <body ng-controller="MainCtrl">
+  <body>
   <div class="navbar navbar-inverse">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
@@ -17,27 +20,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">News</a>
+      <a class="navbar-brand" href="#">Home</a>
     </div>
     <div class="navbar-collapse collapse navbar-inverse-collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">About the club<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Something here</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-backdrop">Nice divider</li>
-            <li><a href="#">First li after divider</a></li>
-            <li><a href="#">Second li after divider</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Trainings<b class="caret"></b></a>
           <ul class="dropdown-menu">
+              <!-- TODO: ng-repeat for courses-->
             <li class="dropdown-header ">Courses</li>
             <li><a href="#">Javascript Basics</a></li>
             <li><a href="#">CSS3, HTML5 and Responsive Design</a></li>
@@ -51,18 +41,20 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Friends<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="https://softuni.bg/#">Software University</a></li>
-            <li><a href="http://telerikacademy.com/">Telerik Academy</a></li>
+            <li><a href="https://softuni.bg">Software University</a></li>
+            <li><a href="http://telerikacademy.com">Telerik Academy</a></li>
           </ul>
         </li>
       </ul>
       <form class="navbar-form navbar-left">
-        <input type="text" class="form-control col-lg-8" placeholder="Search">
+          <!--TODO: ng-model -->
+        <input type="text" class="form-control col-lg-8" placeholder="Search" ng-model="search">
       </form>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-left">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members<b class="caret"></b></a>
           <ul class="dropdown-menu">
+              <!-- TODO: ng-repeat for members-->
             <li><a href="#">Member 1</a></li>
             <li><a href="#">Member 2</a></li>
             <li><a href="#">Member 3</a></li>
@@ -77,7 +69,7 @@
     </div>
   </div>
 
-{{ data.courses.courseName }}
+
     <div class="container" ng-view></div>
 
 
@@ -90,11 +82,13 @@
   <script src="js/lib/angular-route/angular-route.js"></script>
   <script src="js/lib/angular-resource/angular-resource.js"></script>
   <script src="js/lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="js/lib/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="js/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services/coursesData.js"></script>
   <script src="js/services/membersData.js"></script>
   <script src="js/controllers/MainCtrl.js"></script>
-  <script src="js/controllers/ListAllCoursesCtrl.js"></script>
+  <script src="js/controllers/CoursesCtrl.js"></script>
   <script src="js/controllers/ListAllMembersCtrl.js"></script>
   <script src="js/controllers/MemberCtrl.js"></script>
 

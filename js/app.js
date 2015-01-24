@@ -3,19 +3,25 @@
 
 // Declare app level module which depends on filters, and services
 var maCodingClub = angular
-	.module('maCodingClub', ['ngRoute', 'ngResource'])
+	.module('maCodingClub', ['ngRoute', 'ngResource', 'ui.bootstrap'])
 	.config(['$routeProvider',
 		function ($routeProvider) {
 
 			$routeProvider
+
 				.when('/', {
 					templateUrl: '/templates/main.html',
 					controller: 'MainCtrl'
 				})
-
-				.when('/courses/:id', {
-					templateUrl: '/templates/list-all-courses.html',
+				//TODO: list-sll-course - template, ListAllCourseCtrl
+				.when('/courses/', {
+					templateUrl: '/templates/list-all-course.html',
 					controller: 'ListAllCourseCtrl'
+				})
+
+				.when('/course/:id', {
+					templateUrl: '/templates/course.html',
+					controller: 'CourseCtrl'
 				})
 
 				.when('/members', {
