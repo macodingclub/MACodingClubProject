@@ -1,21 +1,17 @@
 'use strict';
 
-
 maCodingClub.controller('ListAllCourseCtrl',
-	function ListAllCourses($scope, $resource, $route, $routeParams, coursesData){
-	var id = $routeParams.id;
-	if(id) {
-		coursesData.getCoursesData(id)
-			.$promise
+	function ListAllCourseCtrl($scope, $routeParams, coursesData) {
+		$scope.$routeParams = $routeParams;
+		if ($routeParams.id) {
+			coursesData.getCoursesData($routeParams.id)
+				.$promise
 				.then(getCourses)
 		};
-		function getCourses(data){
-			var i;
-			var arrCourses = [];
-			for(i = 0; i < data.courses.length; i++){
-				arrCourses[i].push(data.courses[i])
-			}
-			$scope.courses = arrCourses;
+
+		function getCourses(data) {
+
+			$scope.courses = data;
 		}
-});
+	});
 

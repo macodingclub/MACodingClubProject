@@ -1,14 +1,13 @@
 'use strict';
 
- maCodingClub.controller('MainCtrl', function MainCtrl($scope, $routeParams, coursesData ){
+ maCodingClub.controller('MainCtrl', function MainCtrl($scope, $routeParams, coursesData){
 
-var id = $routeParams.id;
-	coursesData.getCoursesData(id)
+	coursesData.getCoursesData(1)
 		.$promise
 		.then(getCourse);
 
 	function getCourse(data){
-		$scope.data = data
+		$scope.courses = data.courses
+
 	}
-	 $scope.testCode = 'The Main Ctrl is working'
  });

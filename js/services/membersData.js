@@ -1,15 +1,16 @@
 'use strict';
 
-maCodingClub.factory('membersData', function($resource){
-	var resource = $resource('/data/members/:memberId', {id: '@memberId'});
+maCodingClub.factory('membersData', function ($resource){
+var Member = $resource('/data/members/:id', {id:'@id'});
 	return {
-		getMembersData: function (id) {
-			return resource.query(
-				{
-					method:'GET',
-					isArray : true
-				}
-			);
+		getMembersData: function () {
+			return Member.query();
+		},
+		getOneMemberData:function(id){
+			return Member.get(
+				{ id:id }
+			)
 		}
 	}
 });
+

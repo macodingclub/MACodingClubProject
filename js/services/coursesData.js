@@ -1,12 +1,14 @@
 'use strict';
 
-maCodingClub.factory('coursesData', function ($http, $resource) {
-	var resource = $resource('/data/courses/:id', {id: '@id'});
+maCodingClub.factory('coursesData', function ($resource) {
+	var Courses = $resource('/data/courses/:id', {id: '@id'});
 	return {
 		getCoursesData: function (id) {
-			return resource.get(
+			return Courses.get(
 				{id: id}
 			)
 		}
 	}
 });
+
+
