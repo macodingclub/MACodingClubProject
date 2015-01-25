@@ -1,8 +1,10 @@
 {
   "id": 6,
-  "name": "MEAN",
+  "name": "Getting MEAN",
   "image": "/img/courses/mean.png",
-  "start": "december",
+  "startDate": "02/08/2016",
+  "finishDate": "04/08/2016",
+  "progress" : "width:0%",
   "coveredTopics": [
     "MongoDB and Mongoose",
     "ExpressJS",

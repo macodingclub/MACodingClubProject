@@ -2,7 +2,10 @@
   "id": 1,
   "name": "JavaScript Basics",
   "image": "/img/courses/javascript-basics.jpg",
-  "start": "november",
+  "startDate": "12/08/2014",
+  "finishDate": "02/08/2015",
+  "progress" : "width:80%",
+  "description":"The course is a great opportunity for exercising a plenty of algorithms and solving a lot of practical problems with plain JavaSctipt",
   "coveredTopics": [
     "Development Tools",
     "JavaScript Syntax",

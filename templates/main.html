@@ -1,28 +1,27 @@
 <div class="container" ng-controller="MainCtrl">
 
-    <div class="jumbotron">
-        <div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-body">
             <div class="row">
-                <div class="col-sm-4 ">
+                <div class="col-md-4 image-container">
                     <img ng-src="img/ma-coding-club-flag.png">
                 </div>
-                <div class="col-sm-8 pull-left">
-                    <h1>Massachusetts Coding Club</h1>
-
-                    <p>Our mission is to create real masters in programming so they can find great job into software
-                        industry,
-                        or even better create their own business.</p>
+                <div class="col-md-6 pull-left">
+                    <h3>Massachusetts Coding Club</h3>
+                    <p>Our mission is to improve existing knowledge through exercising algorithms, discussions of new
+                        trends and technologies and collaboration with the newest tools and instruments so we can achieve
+                        great performance and perfect quality of our code.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div ng-repeat="row in courses.makeRangeByIndexes(courses, 3)" class="row">
-            <div ng-repeat="course in courses.slice(row, row + 3) | filter : search" class="col-md-4">
+        <div ng-repeat="row in courses.makeRangeByIndexes(courses, 3)" class="row ">
+            <div ng-repeat="course in courses.slice(row, row + 3) | filter : search" class="col-md-4 ">
                 <h3><a href="#/course/{{ course.id }}">{{ course.name }}</a></h3>
-
-                <div class="image-container">
+                <div class="image-container " >
                     <a href="#/course/{{ course.id }}"><img ng-src="{{ course.image }}"></a>
                 </div>
             </div>

@@ -1,8 +1,8 @@
-{
+{"id":"1",
   "names":{
     "firstName": "Plamen",
     "lastName" : "Hristov"
   },
 "aboutMe":"Some description here about myself",
-"imagesMember": ["/img/members/plamen.jpg"]
+"image": "/img/members/plamen.jpg"
 }

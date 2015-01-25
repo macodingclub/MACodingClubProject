@@ -2,7 +2,9 @@
   "id": 2,
   "name": "CSS3, HTML5 and Responsive Design",
   "image": "/img/courses/html5-css3-rwd.jpg",
-  "start": "february",
+  "startDate": "02/08/2015",
+  "finishDate": "05/08/2015",
+  "progress" : "width:0%",
   "coveredTopics": [
     "Web Concepts and Tools",
     "HTML Overview",

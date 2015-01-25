@@ -2,7 +2,9 @@
   "id": 4,
   "name": "JavaScript OOP",
   "image": "/img/courses/javascript-oop.jpg",
-  "start": "september",
+  "startDate": "09/08/2015",
+  "finishDate": "11/08/2015",
+  "progress" : "width:0%",
   "coveredTopics": [
     "Functions and Function Expressions",
     "JavaScript Object-Oriented Programming and Inheritance",

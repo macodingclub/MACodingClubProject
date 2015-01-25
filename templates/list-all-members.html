@@ -1,3 +1,11 @@
-<div ng-controller="ListAllMembersCtrl">
-{{ members }}
+<div class="container" ng-controller="MembersCtrl">
+    <div class="row" ng-repeat="row in members.makeRangeByIndexes(members, 3)">
+        <div class="col-md-4" ng-repeat="member in members.slice(row, row + 3) | filter : search">
+            <a href="#/member/{{ member.id }}"><h4>{{ member.names.firstName }}</h4></a>
+
+            <div class="image-container">
+                <a href="#/member/{{ member.id }}"> <img ng-src="{{ member.image }}"/></a>
+            </div>
+        </div>
+    </div>
 </div>

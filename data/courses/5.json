@@ -2,7 +2,9 @@
   "id": 5,
   "name": "JavaScript Aplications",
   "image": "/img/courses/javascript-applications.jpg",
-  "start": "september",
+  "startDate": "11/08/2015",
+  "finishDate": "02/08/2016",
+  "progress" : "width:0%",
   "coveredTopics": [
     "jQuery",
     "jQuery Plugins",

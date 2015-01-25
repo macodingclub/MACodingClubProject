@@ -1,3 +1,31 @@
-<div ng-controller="CourseCtrl">
-    {{courses[0].courseName }}
+<div ng-controller="CourseCtrl" class="container">
+    <div class="jumbotron">
+                <h3>{{course.name }}</h3>
+        <div class="row">
+
+            <blockquote class="col-md-12">
+              <p>{{ course.description }}</p>
+                <small>Star Date : <strong>{{ course.startDate }}</strong></small>
+                <small>Finish Date : <strong>{{ course.finishDate }}</strong></small>
+            </blockquote>
+
+            <div class="col-md-6 pull-right">
+                <div class="image-container">
+                    <img ng-src="{{ course.image }}"/>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="course in course.coveredTopics">{{ course }}</li>
+                </ul>
+            </div>
+
+            <div class="col-md-12">
+                <h3>Progress of the course</h3>
+                <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-info" style="{{ course.progress }}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

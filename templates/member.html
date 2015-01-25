@@ -1,3 +1,13 @@
-<div ng-controller="MemberCtrl">
-{{ member.names.firstName }}
+<div class="container" ng-controller="MembersCtrl">
+  <div class="jumbotron">
+      <div class="row">
+          <div class="col-md-6">
+              {{ member.names.firstName }} {{ member.names.lastName }}
+          </div>
+          <div class="col-md-6 image-container">
+              <img ng-src="{{ member.image }}"/>
+          </div>
+      </div>
+  </div>
+
 </div>

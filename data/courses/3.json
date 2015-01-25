@@ -2,7 +2,9 @@
   "id": 3,
   "name": "PHP & MySQL",
   "image": "/img/courses/php-mysql.jpg",
-  "start": "may",
+  "startDate": "05/08/2015",
+  "finishDate": "09/08/2015",
+  "progress" : "width:0%",
   "coveredTopics": [
     "XAMPP and LAMP Introduction",
     "PHP Introduction",

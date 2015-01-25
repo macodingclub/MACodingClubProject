@@ -1,77 +1,58 @@
 <!DOCTYPE html>
 <html ng-app="maCodingClub">
   <head>
-
     <title>Massachusetts Coding Club</title>
-
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/bootstrap-theme.css">
-      <link rel="stylesheet" href="css/angular-carousel.css">
       <link rel="stylesheet" href="css/app.css"/>
-      <link href="css/angular-carousel.css" rel="stylesheet" type="text/css" />
-
-
   </head>
   <body>
-  <div class="navbar navbar-inverse">
+  <div class="navbar navbar-default">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Home</a>
+      <a class="navbar-brand" href="#/">Home</a>
     </div>
     <div class="navbar-collapse collapse navbar-inverse-collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Trainings<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-              <!-- TODO: ng-repeat for courses-->
+          <a class="dropdown-toggle" data-toggle="dropdown">Trainings<b class="caret"></b></a>
+          <ul class="dropdown-menu" ng-controller="CourseCtrl">
             <li class="dropdown-header ">Courses</li>
-            <li><a href="#">Javascript Basics</a></li>
-            <li><a href="#">CSS3, HTML5 and Responsive Design</a></li>
-            <li><a href="#">PHP&MySQL</a></li>
-            <li><a href="#">Javascript OOP</a></li>
-            <li><a href="#">Javascript Aplications</a></li>
+            <li ng-repeat="course in courses"><a href="#/course/{{ course.id }}">{{ course.name }}</a></li>
           </ul>
         </li>
       </ul>
-      <ul class="nav navbar-nav">
+
+      <ul class="nav navbar-nav navbar-left" ng-controller="MembersCtrl">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Friends<b class="caret"></b></a>
+          <a class="dropdown-toggle" data-toggle="dropdown">Members<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="https://softuni.bg">Software University</a></li>
-            <li><a href="http://telerikacademy.com">Telerik Academy</a></li>
+            <li ng-repeat="member in members"><a href="#/member/{{ member.id }}" >{{ member.names.firstName }}  {{ member.names.lastName }}</a></li>
           </ul>
         </li>
+        <li><a href="#/members">All members</a></li>
+          <li><a  ng-click="inProgress()">Forum</a></li>
+        <li><a ng-click="inProgress()"class="btn btn-default">Log in</a></li>
       </ul>
-      <form class="navbar-form navbar-left">
-          <!--TODO: ng-model -->
-        <input type="text" class="form-control col-lg-8" placeholder="Search" ng-model="search">
-      </form>
-      <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-              <!-- TODO: ng-repeat for members-->
-            <li><a href="#">Member 1</a></li>
-            <li><a href="#">Member 2</a></li>
-            <li><a href="#">Member 3</a></li>
-            <li><a href="#">Member 4</a></li>
-            <li><a href="#">Member 5</a></li>
-            <li><a href="#">Member 6</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Forum</a></li>
-        <li><a href="#" class="btn btn-success">Log in</a></li>
-      </ul>
+        <form class="navbar-form navbar-left">
+          <input type="text" class="form-control col-lg-8" placeholder="Search" ng-model="search">
+        </form>
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Friends<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://softuni.bg">Software University</a></li>
+              <li><a href="http://telerikacademy.com">Telerik Academy</a></li>
+            </ul>
+          </li>
+        </ul>
     </div>
   </div>
-
-
     <div class="container" ng-view></div>
-
 
 
     <!-- In production use:
@@ -87,10 +68,10 @@
   <script src="js/app.js"></script>
   <script src="js/services/coursesData.js"></script>
   <script src="js/services/membersData.js"></script>
+  <script src="js/services/createRange.js"></script>
   <script src="js/controllers/MainCtrl.js"></script>
   <script src="js/controllers/CoursesCtrl.js"></script>
-  <script src="js/controllers/ListAllMembersCtrl.js"></script>
-  <script src="js/controllers/MemberCtrl.js"></script>
+  <script src="js/controllers/MembersCtrl.js"></script>
 
 
   </body>

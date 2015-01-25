@@ -26,12 +26,12 @@ var maCodingClub = angular
 
 				.when('/members', {
 					templateUrl: '/templates/list-all-members.html',
-					controller: 'ListAllMembersCtrl'
+					controller: 'MembersCtrl'
 				})
 
 				.when('/member/:id', {
 					templateUrl: '/templates/member.html',
-					controller: 'MemberCtrl'
+					controller: 'MembersCtrl'
 				})
 
 				.otherwise('/', {
