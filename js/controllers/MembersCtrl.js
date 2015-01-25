@@ -17,6 +17,6 @@ maCodingClub.controller('MembersCtrl', function MembersCtrl($scope, $routeParams
 	}
 
 	function inProgress(){
-		alert('Still in progress')
+		alert('In progress')
 	}
 });
